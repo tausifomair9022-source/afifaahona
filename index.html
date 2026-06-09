@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ahona Case File</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="grain"></div>
+  <div class="cursorGlow"></div>
+
+  <section id="screen0" class="screen active intro">
+    <div class="phone-frame">
+      <video class="main-video" src="assets/main-video.mp4" autoplay muted loop playsinline></video>
+    </div>
+    <div class="intro-card">
+      <p class="eyebrow">Case opened</p>
+      <h1>Make Ahona Angry Simulator</h1>
+      <p>No cute nonsense. Just evidence, chaos, and one final question.</p>
+      <button class="primary" onclick="nextScreen()">Start the trouble</button>
+    </div>
+  </section>
+
+  <section id="screen1" class="screen">
+    <div class="topbar"><span>Phase 01</span><b>Collecting reasons for Ahona to get angry</b></div>
+    <div class="chaos-grid">
+      <div class="media-card tall"><img src="assets/mask.png"><span>Evidence: face mask rage mode</span></div>
+      <div class="media-card"><video src="assets/clip1.mp4" autoplay muted loop playsinline></video><span>Video evidence loaded</span></div>
+      <div class="media-card"><img src="assets/funnyface.png"><span>Expression: questionable</span></div>
+      <div class="media-card"><img src="assets/angry1.jpg"><span>Current mood: already annoyed</span></div>
+    </div>
+    <button class="primary floating-next" onclick="nextScreen()">Continue before she blocks you</button>
+  </section>
+
+  <section id="screen2" class="screen">
+    <div class="scanner-wrap">
+      <h2>Running Ahona Anger Test</h2>
+      <div class="scan-box"><img src="assets/gloss.jpg"><div class="scan-line"></div></div>
+      <div class="meters">
+        <div><span>Anger loading</span><b>91%</b><i style="width:91%"></i></div>
+        <div><span>Side eye power</span><b>100%</b><i style="width:100%"></i></div>
+        <div><span>Chance she says “hmm”</span><b>98%</b><i style="width:98%"></i></div>
+      </div>
+      <button class="primary" onclick="nextScreen()">Ask the real question</button>
+    </div>
+  </section>
+
+  <section id="screen3" class="screen question-screen">
+    <div class="question-card">
+      <p class="eyebrow">Final question</p>
+      <h2>Do you love Tausif?</h2>
+      <p class="warning">Choose carefully. The No button has trust issues.</p>
+      <div class="buttons-area" id="buttonsArea">
+        <button class="yes" onclick="showFinal()">YES</button>
+        <button class="no" id="noBtn">NO</button>
+      </div>
+      <p id="taunt" class="taunt">Try clicking NO. I dare you.</p>
+    </div>
+  </section>
+
+  <section id="screen4" class="screen final-screen">
+    <div class="final-card">
+      <img src="assets/final.jpg" alt="Tausif and Ahona">
+      <h1>I love you too ❤️</h1>
+      <p>Correct answer. Case closed.</p>
+    </div>
+  </section>
+
+<script src="script.js"></script>
+</body>
+</html>
